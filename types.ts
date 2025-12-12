@@ -21,11 +21,16 @@ export interface Experience {
   description: string[];
 }
 
+export interface ProjectLink {
+  title: string;
+  url: string;
+}
 export interface Project {
   title: string;
   description: string;
   techStack: string[];
-  link?: string;
+  links?: ProjectLink[]; 
+  
   period?: string;
   imageUrl?: string;
 }

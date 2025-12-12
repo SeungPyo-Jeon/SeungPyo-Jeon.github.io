@@ -12,7 +12,7 @@ export const cvData: CVData = {
     "현재 **서울과학기술대학교 인공지능응용학과 4학년 재학** 중입니다."
   ],
   contact: {
-    email: "24110163@seoultech.ac.kr",
+    email: "tmdvy1468+lab@gmail.com",
     github: "https://github.com/SeungPyo-Jeon",
     location: "Seoul, Republic of Korea"
   },
@@ -53,26 +53,43 @@ export const cvData: CVData = {
   ],
   projects: [
     {
-      title: "Satellite Tree Species Classification Model",
-      description: "탄소중립 전략의 핵심 자원인 수림의 탄소 포집량 계산을 위해 중요한 수종 예측을 목표로 합니다. 다중 다시점 위성 데이터를 입력으로 하는 수종 분류 딥러닝 모델을 제작하였습니다.",
+      title: "Satellite Tree Species Classification",
+      description: "탄소중립 전략의 핵심 자원인 수림의 탄소 포집량 계산을 위해 중요한 수종 예측을 목표로 합니다.\n 다중 다시점 위성 데이터를 입력으로 하는 수종 분류 딥러닝 모델을 제작하였습니다.",
       techStack: ["Python", "PyTorch", "Remote Sensing"],
-      link: "https://github.com/SeungPyo-Jeon/CapstoneDesign-ForestCarbonAi",
+      links: [
+        { title: "GitHub", url: "https://github.com/SeungPyo-Jeon/CapstoneDesign-ForestCarbonAi" },
+        { title: "수종 Demo", url: "https://seungpyo-jeon.github.io/CapstoneDesign-ForestCarbonAi/DemoPage/compareSpecies.html" }, 
+        {title: "탄소량 Demo", url: "https://seungpyo-jeon.github.io/CapstoneDesign-ForestCarbonAi/DemoPage/multiMap.html"},
+        { title: "Paper", url: "https://www.mdpi.com/2072-4292/17/13/2222" }
+      ],
       period: "Research Project",
       // 예시 이미지: 실제 이미지가 있다면 경로를 입력하세요.
-      // imageUrl: "/path/to/image.jpg" 
+      imageUrl: "https://github.com/SeungPyo-Jeon/CapstoneDesign-ForestCarbonAi/blob/main/DemoPage/workflow_revision.png?raw=true" 
+    },
+    {
+      title: "DEVS Simulation For Efficient Operation",
+      description: "실제 엘레베이터 운영 데이터를 구할 수 없는 상황 속 가장 효율적인 운영 알고리즘 탐색을 목표로 합니다.\n 확장 가능한 DEVS 시뮬레이션을 이용해 최적의 알고리즘을 찾습니다",
+      techStack: ["Python", "DEVS", "M&S"],
+      links: [
+        { title: "GitHub", url: "https://github.com/SeungPyo-Jeon/Elevator_System_Using_DEVS_formalism" },
+      ],
+      period: "Lecture - Simulation",
+      imageUrl: "https://github.com/SeungPyo-Jeon/Elevator_System_Using_DEVS_formalism/blob/main/ddqn-optimize.gif?raw=true"
     },
     {
       title: "Passenger Recognition Model for Congestion Analysis",
-      description: "탑승객 안전과 직결된 열차 내 혼잡도를 계산을 목표로 합니다. CCTV 이미지를 입력으로 하는 Faster-RCNN 기반 승객 인식 모델을 개발하였습니다.",
+      description: "탑승객 안전과 직결된 열차 내 혼잡도를 계산을 목표로 합니다. \n CCTV 이미지를 입력으로 하는 Faster-RCNN 기반 승객 인식 모델을 개발하였습니다.",
+      links: [
+        { title: "GitHub", url: "https://github.com/SeungPyo-Jeon/KRRI-ObjectDetection" },
+      ],
       techStack: ["Python", "Faster-RCNN", "Computer Vision"],
-      period: "KRRI Internship",
-      imageUrl: "https://placehold.co/800x400/1e293b/ffffff?text=Project+Screenshot+Example" // 예시 이미지 추가
+      period: "한국철도기술연구원(KRRI) Internship"
     }
   ],
   skills: [
     { category: "Programming", items: ["Python", "C/C++", "Java", "C#"] },
     { category: "Frameworks & Libraries", items: ["PyTorch", "TensorFlow", "OpenCV", "Pandas", "NumPy"] },
-    { category: "Others", items: ["Android", "Unity", "Git", "LaTeX"] }
+    { category: "Others", items: ["Android", "Unity", "Git"] }
   ],
   papers: [
     {
@@ -82,8 +99,8 @@ export const cvData: CVData = {
       link: "https://www.mdpi.com/2072-4292/17/13/2222"
     }
   ],
+  
   qualifications: [
-    { name: "SQLD", date: "2024.08" },
-    { name: "TOEIC", score: "765" }
-  ]
+    { name: "SQLD", date: "2024.08" }
+  ] 
 };
