@@ -42,11 +42,11 @@ export const cvData: CVData = {
   experience: [
     {
       company: "Korea Railroad Research Institute (KRRI)",
-      position: "Research Intern",
+      position: "Intern",
       location: "Uiwang, Korea",
       period: "2024.06 – 2024.09",
       description: [
-        "ICT 대중교통연구실 소속",
+        "ICT 대중교통연구실",
         "열차 내 혼잡도 계산을 위한 승객 인식 모델 개발 참여"
       ]
     }
