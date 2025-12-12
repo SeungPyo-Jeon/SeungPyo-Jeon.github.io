@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {project.description}
       </p>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {project.techStack.map((tech, index) => (
           <span 
             key={index} 
@@ -48,6 +48,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </span>
         ))}
       </div>
+
+      {project.imageUrl && (
+        <div className="mt-4 rounded-md overflow-hidden border border-slate-100">
+          <img 
+            src={project.imageUrl} 
+            alt={`${project.title} screenshot`} 
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )}
     </div>
   );
 };

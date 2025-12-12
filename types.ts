@@ -27,6 +27,7 @@ export interface Project {
   techStack: string[];
   link?: string;
   period?: string;
+  imageUrl?: string;
 }
 
 export interface Paper {

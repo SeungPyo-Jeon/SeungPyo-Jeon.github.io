@@ -82,29 +82,29 @@ const App: React.FC = () => {
                 {cvData.title}
               </p>
               
-              <div className="flex flex-col md:flex-row md:items-center gap-y-2 gap-x-6 text-sm text-slate-500">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-col md:flex-row md:items-center gap-y-2 gap-x-3 text-sm text-slate-500">
+                <div className="flex items-center gap-2 md:whitespace-nowrap">
                   <Mail size={16} className="shrink-0" />
-                  <a href={`mailto:${cvData.contact.email}`} className="hover:underline text-slate-600 break-all">{cvData.contact.email}</a>
+                  <a href={`mailto:${cvData.contact.email}`} className="hover:underline text-slate-600">{cvData.contact.email}</a>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-y-2 gap-x-1 md:whitespace-nowrap">
                   <Github size={16} className="shrink-0" />
-                  <a href={cvData.contact.github} target="_blank" rel="noopener noreferrer" className="hover:underline text-slate-600 break-all">
+                  <a href={cvData.contact.github} target="_blank" rel="noopener noreferrer" className="hover:underline text-slate-600">
                     github.com/SeungPyo-Jeon
                   </a>
                 </div>
                 {cvData.contact.location && (
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-y-2 gap-x-1 md:whitespace-nowrap">
                     <MapPin size={16} className="shrink-0" />
                     <span>{cvData.contact.location}</span>
                   </div>
                 )}
               </div>
 
-              {/* Summary moved here */}
-              <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed mt-6">
+              {/* Summary - Desktop Version (Next to image) */}
+              <div className="hidden md:block prose prose-slate max-w-none text-slate-700 leading-snug mt-6">
                 {cvData.summary.map((paragraph, idx) => (
-                  <p key={idx} className="mb-2" dangerouslySetInnerHTML={{ 
+                  <p key={idx} className="mb-1" dangerouslySetInnerHTML={{ 
                     __html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-900">$1</strong>') 
                   }} />
                 ))}
@@ -124,6 +124,15 @@ const App: React.FC = () => {
                 </div>
               </div>
             )}
+          </div>
+
+          {/* Summary - Mobile Version (Full Width below Header/Image) */}
+          <div className="md:hidden prose prose-slate max-w-none text-slate-700 leading-snug mt-6">
+            {cvData.summary.map((paragraph, idx) => (
+              <p key={idx} className="mb-1" dangerouslySetInnerHTML={{ 
+                __html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-900">$1</strong>') 
+              }} />
+            ))}
           </div>
         </header>
 
