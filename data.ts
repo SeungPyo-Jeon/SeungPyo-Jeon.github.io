@@ -32,6 +32,13 @@ export const cvData: CVData = {
       details: ["Howard R. Hughes College of Engineering", "ML+AI workshop (33h)", "US College Educational Learning Program (14h)"]
     },
     {
+      school: "Military Service - ROKA ",
+      degree: "육군 병장 만기 전역",
+      location: "Icheon, Korea",
+      period: "2021.05 – 2022.11",
+      details: ["제7기동군단장상"]
+    },
+    {
       school: "Hoseo University",
       degree: "B.S. in Computer and Information Engineering",
       location: "Cheonan, Korea",
