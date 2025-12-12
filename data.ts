@@ -4,7 +4,7 @@ export const cvData: CVData = {
   name: "SeungPyo Jeon",
   koreanName: "전승표",
   title: "Undergraduate Researcher in Computer Vision",
-  profileImage: "https://seungpyo-jeon.github.io/src/1763907644430-.jpg", // 교체 방법: 이 부분을 실제 이미지 URL이나 public 폴더 내의 경로(예: "assets/profile.jpg")로 변경하세요.
+  profileImage: "https://seungpyo-jeon.github.io/assets/images/1763907644430-.jpg", // 교체 방법: 이 부분을 실제 이미지 URL이나 public 폴더 내의 경로(예: "assets/profile.jpg")로 변경하세요.
   summary: [
     "Hello, I'm SeungPyo.",
     "관심 분야는 **Computer Vision** 입니다.",
