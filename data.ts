@@ -4,7 +4,7 @@ export const cvData: CVData = {
   name: "SeungPyo Jeon",
   koreanName: "전승표",
   title: "Undergraduate Researcher in Computer Vision",
-  profileImage: "https://private-user-images.githubusercontent.com/54004940/526030511-58af068a-fd56-45f2-b2ff-8829e58fcc2d.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU1NjY0MzAsIm5iZiI6MTc2NTU2NjEzMCwicGF0aCI6Ii81NDAwNDk0MC81MjYwMzA1MTEtNThhZjA2OGEtZmQ1Ni00NWYyLWIyZmYtODgyOWU1OGZjYzJkLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjEyVDE5MDIxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxOTk5MTkwMzcyODBlYWEzNWMzZDRiMjc2YWRhZWU3ODlhZjY1NGZlNTljOWFjZGJlZWJjNzkxYzU1YmQ5MDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.DwiRUyjOcxVXM9s-iBN72jzwXOkJLflrZNQ0bPwpH0Q", // 교체 방법: 이 부분을 실제 이미지 URL이나 public 폴더 내의 경로(예: "assets/profile.jpg")로 변경하세요.
+  profileImage: "https://SeungPyo-Jeon.github.io/assets/images/profile1.png", // 교체 방법: 이 부분을 실제 이미지 URL이나 public 폴더 내의 경로(예: "assets/profile.jpg")로 변경하세요
   summary: [
     "Hello, I'm SeungPyo.",
     "관심 분야는 **Computer Vision** 입니다.",
