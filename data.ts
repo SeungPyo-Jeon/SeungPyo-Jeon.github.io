@@ -4,7 +4,7 @@ export const cvData: CVData = {
   name: "SeungPyo Jeon",
   koreanName: "전승표",
   title: "Undergraduate Researcher in Computer Vision",
-  profileImage: "https://SeungPyo-Jeon.github.io/src/1763907644430-.jpg", // 교체 방법: 이 부분을 실제 이미지 경로(예: "./profile.jpg")나 URL로 변경하세요.
+  profileImage: "https://seungpyo-jeon.github.io/src/1763907644430-.jpg", // 교체 방법: 이 부분을 실제 이미지 URL이나 public 폴더 내의 경로(예: "assets/profile.jpg")로 변경하세요.
   summary: [
     "Hello, I'm SeungPyo.",
     "관심 분야는 **Computer Vision** 입니다.",
@@ -63,7 +63,7 @@ export const cvData: CVData = {
     },
     {
       title: "Passenger Recognition Model for Congestion Analysis",
-      description: "탑승객 안전과 직결된 열차 내 혼잡도를 계산을 목표로 합니다. CCTV 이미지를 입력으로 Faster-RCNN 기반 승객 인식 모델을 개발하였습니다.",
+      description: "탑승객 안전과 직결된 열차 내 혼잡도를 계산을 목표로 합니다. CCTV 이미지를 입력으로 하는 Faster-RCNN 기반 승객 인식 모델을 개발하였습니다.",
       techStack: ["Python", "Faster-RCNN", "Computer Vision"],
       period: "KRRI Internship",
       imageUrl: "https://placehold.co/800x400/1e293b/ffffff?text=Project+Screenshot+Example" // 예시 이미지 추가
